@@ -77,13 +77,8 @@ Arrays with a predefined size at compile time are defined as follows:
 You can now see LLVM IR in more detail in the corresponding files: 
 
 - Functions.md 
-
 - Structures.md 
-
 - Calls.md
-
 - Memory.md
-
 - Arithmetic.md
-
 - Globals.md
