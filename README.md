@@ -1,5 +1,5 @@
 <p align="center">
-  <img src= "https://github.com/DevCheckOG/LLVMIRCourse/blob/master/assets/LLVMlogo.png" alt= "logo" style= "width: 2hv; height: 2hv;"> </img>
+  <img src= "https://github.com/DevCheckOG/LLVMIRCourse/blob/master/assets/LLVMlogo.png" alt= "logo" style= "width: 1hv; height: 1hv;"> </img>
 </p>
 
 # First things first.
