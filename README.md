@@ -2,7 +2,7 @@
   <img src= "https://github.com/DevCheckOG/LLVMIRCourse/blob/master/assets/LLVMlogo.png" alt= "logo" style= "width: 1hv; height: 1hv;"> </img>
 </p>
 
-# First things first.
+# First things first, LLVM.
 
 ## ¿What is LLVM?
 
