@@ -13,6 +13,10 @@ facilitate the creation of compilers and other code manipulation-related
 representation (IR), code optimization, machine code generation, and 
 execution.
 
+## ¿Where is LLVM used?
+
+It is currently the "magic" behind the lives of languages ​​like Rust, Swift, V lang, Zig, and many other modern languages. Used by C or C++ compilers like Clang.
+
 ## ¿What is intermediate representation (IR)?
 
 Intermediate representation generally refers to a language that is independent of source code and sub-objective, as it is the midpoint between two major phases, from inception to completion.
