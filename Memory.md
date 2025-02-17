@@ -6,6 +6,8 @@ To put it into context, there are two different types of memory sections, the st
 
 The **stack** is a section of memory that is freed when the function is out of scope. This memory is used to define local variables in LLVM IR. 
 
+It is used for data types that know the maximum size at runtime.
+
 ## Heap
 
 The **heap** in LLVM IR is treated as a section of memory, where any type of data can be used and stored throughout the program. It can be used anywhere in the program, but it must be freed before it ends so as not to lose that section of used memory.
@@ -17,6 +19,8 @@ Memory alignment tells the CPU that data in memory should point to multiples of 
 ## Stack Usage
 
 To use the stack, we must use the instruction called `alloca`, followed by the type to assign and the memory alignment.
+
+The stack is actually much faster than the heap because it knows the maximum amount of memory size for a certain type or value, and it automatically frees itself after falling when reaching the end of the function or a return.
 
 This instruction returns a memory-allocated pointer to a given memory address, represented by the primitive type `ptr`.
 

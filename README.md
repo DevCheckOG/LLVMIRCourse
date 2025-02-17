@@ -1,5 +1,6 @@
 <p align="center">
   <img src= "https://github.com/DevCheckOG/LLVMIRCourse/blob/master/assets/LLVMlogo.png" alt= "logo" style= "width: 1hv; height: 1hv;"> </img>
+
 </p>
 
 # First things first, LLVM.
@@ -49,7 +50,7 @@ Finally, the `puts` function is prototyped or declared, since it must be availab
 
 ### Primitive types in LLVM IR
 
-LLVM IR features primitive types, if you can say so, as these are types that are fully integrated into the language. They range from floating-point types, doubles, 8-bit, 16-bit, 32-bit, and 64-bit integers to types that return nothing or are simply the living equivalent of generic types, which can hold any other type other than void, respectively.
+LLVM IR includes primitive types, if you can say so, as these are types that are fully integrated into the language. They range from floating-point types, doubles, 8-bit, 16-bit, 32-bit, and 64-bit integers, and booleans to types that return nothing or are simply the live equivalent of generic types, which can contain any other type other than void, respectively.
 
 ```llvm
 float
@@ -59,6 +60,7 @@ i64
 i32
 i16
 i8
+i1
 void
 ptr
 ```
@@ -82,3 +84,6 @@ You can now see LLVM IR in more detail in the corresponding files:
 - Memory.md
 - Arithmetic.md
 - Globals.md
+- Comparisons.md
+- Branches.md
+- Loops.md

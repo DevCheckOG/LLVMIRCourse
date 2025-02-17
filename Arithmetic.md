@@ -67,3 +67,5 @@ store float 10.0, ptr %variable, align 4
 %resultado = fdiv float %value, float 10.0 ; 10.0 / 10.0 = 0
 store float %resultado, ptr %variable, align 4
 ```
+
+Each of these instructions allows us to execute simple mathematical operations in a simple and orderly manner, in cascade, similar to assembler in some variants.
