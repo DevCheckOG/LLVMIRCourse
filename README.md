@@ -74,9 +74,11 @@ Arrays with a predefined size at compile time are defined as follows:
 [8 x i8]
 ```
 
-## Deeper.
+## More deeper.
 
-You can now see LLVM IR in more detail in the corresponding files: 
+You can now see LLVM IR in more detail in the corresponding files:
+
+(It is organized in a way that is ready to learn) 
 
 - Functions.md 
 - Structures.md 

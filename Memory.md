@@ -4,9 +4,7 @@ To put it into context, there are two different types of memory sections, the st
 
 ## Stack
 
-The **stack** is a section of memory that is freed when the function is out of scope. This memory is used to define local variables in LLVM IR. 
-
-It is used for data types that know the maximum size at runtime.
+The **stack** is a section of memory that is freed when the function is out of scope. This memory is used to define local variables in LLVM IR.  It is used for data types that know the maximum size at runtime.
 
 ## Heap
 

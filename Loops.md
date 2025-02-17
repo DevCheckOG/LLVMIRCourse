@@ -24,3 +24,11 @@ br %condition ; Unconditional jump
 ```
 
 In this example, the counter will be increased until it equals 1000.
+
+Equivalent C code:
+
+```c
+for (long a = 0; a == 1000; a++) {
+    // TO-DO
+}
+```
