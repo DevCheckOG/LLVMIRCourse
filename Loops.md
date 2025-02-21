@@ -9,16 +9,16 @@ An example with a counter:
 store i64 0, ptr %0, align 4 ; Store in value to the counter
 br %condition ; Unconditional jump
 
-%condition:
+condition:
     %1 = load i64, ptr %0, align 4
     %cmp = icmp eq i64 %1, 1000
     br i1 %cmp label %exit, label %body
-%body:
+body:
     %2 = load i64, ptr %0, align 4
     %3 = add i64 %2, 1
     store i64 %3, ptr %0, align 4
     br %condition ; Unconditional jump
-%exit:
+exit:
     ; TO-DO
     unreacheable
 ```
