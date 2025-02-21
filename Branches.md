@@ -5,9 +5,9 @@ Very similar to the labels that are used for keywords like `goto` in **C**, thes
 First the % symbol is used, followed by its identifier, and then the colon symbol:
 
 ```llvm
-%yes:
+yes:
     ; goto no
-%no:
+no:
     unreacheable
 ```
 
@@ -16,9 +16,9 @@ If you are very attentive, you can already imagine that if there are labels, you
 ```llvm
 ; Syntax: br <%branch>
 
-%yes:
+yes:
     br %no
-%no:
+no:
     unreacheable
 ```
 
@@ -39,8 +39,8 @@ On the other hand, we can also use the `br` instruction to jump to a given boole
     %cmp = icmp eq i1 %2, %3 
 
     br i1 %cmp label %true, label %false
-%true:
+true:
     ; TO-DO
-%false:
+false:
     unreacheable
 ```
