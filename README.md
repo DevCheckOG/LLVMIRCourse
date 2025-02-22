@@ -66,7 +66,7 @@ i16
 i8
 i1
 void
-ptr
+ptr ; Opaque pointer type, available in LLVM 17-present version of LLVM.
 ```
 
 Arrays with a predefined size at compile time are defined as follows:
