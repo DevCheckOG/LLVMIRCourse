@@ -4,15 +4,15 @@ To put it into context, there are two different types of memory sections, the st
 
 ## Stack
 
-The **stack** is a section of memory that is freed when the function is out of scope. This memory is used to define local variables in LLVM IR.  It is used for data types that know the maximum size at runtime.
+The **stack** is a section of memory that is freed when a function goes out of scope, moving the stack backward. This memory is used to define local variables in LLVM IR. It is used for data types whose exact size is known.
 
 ## Heap
 
-The **heap** in LLVM IR is treated as a section of memory, where any type of data can be used and stored throughout the program. It can be used anywhere in the program, but it must be freed before it ends so as not to lose that section of used memory.
+The **heap** is considered a section of memory where any type of data can be used and stored throughout the program. It's much more flexible and capable than the stack but more positional, as it requires allocated memory to always be deallocated; otherwise, memory leaks occur.
 
 ## Memory Alignment
 
-Memory alignment tells the CPU that data in memory should point to multiples of N. It is mandatory in many use cases in LLVM IR.
+Memory alignment ensures data is stored at memory addresses divisible by a specific value (N). For instance, a 4-byte aligned datum must reside at addresses like 0, 4, 8, etc. This allows the CPU to access data more efficiently, as many architectures process aligned data in a single cycle, while unaligned data may require multiple accesses or trigger exceptions. In LLVM IR, alignment is specified in instructions like load or store (e.g., align 4) to guide the compiler in generating optimized code for the target hardware.
 
 ## Stack Usage
 
